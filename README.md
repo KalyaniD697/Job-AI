@@ -1,20 +1,34 @@
 # Job AI
 
-Job AI is a full-stack application that helps users discover job opportunities and generate professional email outreach. It combines a Django REST API backend with a React frontend for a smooth end-to-end experience.
+Job AI is a full-stack job discovery and outreach assistant that helps users find relevant opportunities and generate professional emails for recruiters or hiring teams.
+
+The application combines a Django REST API backend with a React frontend to make job searching, analysis, and outreach easier in one workflow.
+
+## Overview
+
+This project is designed to:
+
+- search and review job listings
+- extract useful details from job descriptions
+- analyze roles and requirements
+- generate polished outreach messages
+- present results in a simple and user-friendly interface
 
 ## Features
 
-- Search for jobs from public job sources
-- Analyze job descriptions and extract relevant details
-- Generate polished outreach emails
-- View job cards and contact information in the frontend
-- REST API endpoints powered by Django and Django REST Framework
+- Job search and listing flow
+- Job description analysis
+- Contact and email generation support
+- Structured backend APIs for frontend integration
+- Responsive React-based UI
+- Local SQLite database for development
 
 ## Tech Stack
 
 - Backend: Python, Django, Django REST Framework
 - Frontend: React, Vite, JavaScript
-- Database: SQLite for local development
+- Database: SQLite
+- Version Control: Git / GitHub
 
 ## Project Structure
 
@@ -33,14 +47,18 @@ job-ai/
 │   └── vite.config.js
 ├── .gitignore
 ├── README.md
-└── package-lock.json
+├── package-lock.json
+└── .env
 ```
 
 ## Prerequisites
 
+Before running the app, make sure you have:
+
 - Python 3.10+
 - Node.js 18+
 - npm
+- Git
 
 ## Backend Setup
 
@@ -53,7 +71,7 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-If the project uses a `.env` file, make sure it exists in the backend folder and contains your environment variables.
+> If the project uses a `.env` file, keep your environment variables in `backend/.env` and do not commit sensitive values.
 
 ## Frontend Setup
 
@@ -63,17 +81,22 @@ npm install
 npm run dev
 ```
 
-## Running the App
+## Run the Application
 
-1. Start the Django backend.
-2. Start the React frontend.
-3. Open the frontend URL shown by Vite in the browser.
+1. Start the Django backend
+2. Start the React frontend
+3. Open the local address provided by Vite in your browser
 
-## Notes
+## Development Notes
 
-- The backend is configured for local development.
-- Secret keys and private environment configuration should stay in `.env` and should not be committed to Git.
+- The app is currently set up for local development.
+- Secret keys and private configuration should remain in environment variables.
+- The repository includes a root-level `.gitignore` to avoid committing generated files and local secrets.
 
 ## License
 
 This project is for educational and personal use.
+
+## Author
+
+Kalyani Dukka
