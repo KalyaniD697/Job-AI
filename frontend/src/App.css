@@ -1,0 +1,469 @@
+.app {
+    min-height: 100vh;
+}
+
+
+.app-header {
+    background: #111827;
+    color: white;
+    padding: 28px 24px;
+}
+
+
+.header-content {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.logo {
+    font-size: 40px;
+}
+
+
+.app-header h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+
+.app-header p {
+    margin: 4px 0 0;
+    color: #cbd5e1;
+}
+
+
+.container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+
+.search-section {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+
+.section-title h2 {
+    margin: 0 0 8px;
+}
+
+
+.section-title p {
+    margin: 0 0 25px;
+    color: #64748b;
+}
+
+
+.search-form {
+    display: grid;
+    grid-template-columns:
+        repeat(3, 1fr) auto;
+    gap: 16px;
+    align-items: end;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.form-group input {
+    padding: 12px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    outline: none;
+}
+
+
+.form-group input:focus {
+    border-color: #6366f1;
+}
+
+
+.search-form button,
+.primary-button {
+    border: none;
+    background: #4f46e5;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+
+.search-form button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+.results-section {
+    margin-top: 35px;
+}
+
+
+.results-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+
+.results-header h2 {
+    margin: 0;
+}
+
+
+.results-header span {
+    color: #64748b;
+}
+
+
+.jobs-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+
+.job-card {
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 3px 15px
+        rgba(0, 0, 0, 0.05);
+}
+
+
+.job-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+
+.job-header h3 {
+    margin: 0;
+    font-size: 21px;
+}
+
+
+.company {
+    margin: 7px 0;
+    color: #475569;
+    font-weight: 600;
+}
+
+
+.match-score {
+    background: #dcfce7;
+    color: #166534;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+.job-meta {
+    display: flex;
+    gap: 20px;
+    margin: 15px 0;
+    color: #64748b;
+    font-size: 14px;
+}
+
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 12px 0;
+}
+
+
+.skill {
+    background: #eef2ff;
+    color: #4338ca;
+    padding: 5px 10px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+
+.description {
+    color: #475569;
+    line-height: 1.6;
+}
+
+
+.match-reason {
+    background: #f8fafc;
+    padding: 12px;
+    border-radius: 8px;
+    color: #475569;
+    font-size: 14px;
+}
+
+
+.job-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+
+.secondary-button {
+    display: inline-block;
+    background: #f1f5f9;
+    color: #334155;
+    border: none;
+    padding: 11px 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+
+.contact-panel {
+    margin-top: 30px;
+    background: white;
+    padding: 25px;
+    border-radius: 14px;
+    box-shadow: 0 3px 15px
+        rgba(0, 0, 0, 0.05);
+}
+
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.panel-header h2 {
+    margin: 0;
+}
+
+
+.panel-header p {
+    color: #64748b;
+}
+
+
+.confidence {
+    background: #eef2ff;
+    color: #4338ca;
+    padding: 7px 12px;
+    border-radius: 15px;
+    font-size: 13px;
+}
+
+
+.contact-details {
+    margin: 20px 0;
+}
+
+
+.contact-item {
+    display: flex;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.contact-item strong {
+    min-width: 100px;
+}
+
+
+.contact-item a {
+    color: #4f46e5;
+    text-decoration: none;
+}
+
+
+.loading {
+    text-align: center;
+    padding: 50px;
+}
+
+
+.spinner {
+    width: 35px;
+    height: 35px;
+    border: 4px solid #e5e7eb;
+    border-top-color: #4f46e5;
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+    margin: auto;
+}
+
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+.error-message {
+    margin-top: 20px;
+    padding: 15px;
+    background: #fee2e2;
+    color: #991b1b;
+    border-radius: 8px;
+}
+
+
+.empty-state {
+    text-align: center;
+    padding: 80px 20px;
+    color: #64748b;
+}
+
+
+.empty-state div {
+    font-size: 50px;
+}
+
+
+.loading-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+
+.loading-card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+
+.loading-card h3 {
+    margin-top: 20px;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 200;
+}
+
+
+.email-modal {
+    position: relative;
+    width: 100%;
+    max-width: 750px;
+    max-height: 90vh;
+    overflow-y: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+
+.close-button {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+}
+
+
+.email-modal h2 {
+    margin-top: 0;
+}
+
+
+.email-modal label {
+    display: block;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+
+.email-modal input,
+.email-modal textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    resize: vertical;
+}
+
+
+.email-to {
+    background: #f8fafc;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+
+.email-actions {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 800px) {
+
+    .search-form {
+        grid-template-columns: 1fr;
+    }
+
+    .job-header {
+        flex-direction: column;
+    }
+
+    .job-meta {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .panel-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+}
